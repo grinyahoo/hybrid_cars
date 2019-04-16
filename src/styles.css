@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Hughs;
+  src: url("/assets/fonts/Hughs.otf");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  height: auto;
+  background-color: rgba(252, 6, 67, 0.7);
+  box-shadow: 0;
+  z-index: 2;
+}
+
+#greeting {
+  /* background-image: url("/assets/images/bg0.jpg");
+  background-position: center; */
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.light-overlay {
+  background-color: rgba(39, 39, 39, 0.5);
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.rounded {
+  border-radius: 5%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.center-flex {
+  align-content: center;
+  justify-content: center;
+}
+
+.position-absoulte {
+  position: absolute;
+}
+
+.brand-name {
+  font-family: Hughs;
+  font-size: 3rem;
+}
+
+.scroll-arrow {
+  cursor: pointer;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: pop 3s infinite;
+}
+
+.scroll-arrow a {
+  color: white;
+}
+
+@keyframes pop {
+  0%,
+  100% {
+    /* font-size: 10px; */
+  }
+  90% {
+    /* font-size: 12px; */
+    transform: scale(2);
+  }
+}
+.service-card {
+  /* max-height: 200px; */
+  /* height: auto; */
+  /* width: auto; */
+}
+
+.service-card img {
+  /* height: 200px; */
+  overflow: hidden;
+  /* height: auto; */
+}
+
+.calendar-frame {
+  min-height: 300px;
+}
+
+.estimator-form {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.map-image {
+  background-image: url("assets/images/map.png");
+}
