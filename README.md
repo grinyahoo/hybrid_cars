@@ -1,4 +1,3 @@
-# hybrid_cars
-Hybrid Cars frontend source
+#Hybrid Cars frontend webapp
 
 React app. Materializecss as css framework
