@@ -1,5 +1,5 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 export default class Greeting extends React.Component {
   render() {
@@ -40,11 +40,10 @@ export default class Greeting extends React.Component {
             </div>
             <div className="row scroll-arrow pulse text-center">
               <a href="#services">
-                <i class="material-icons">arrow_downward</i>
+                <i className="material-icons">arrow_downward</i>
               </a>
             </div>
           </div>
-          {/* <div style={{ height: "200px" }} /> */}
         </Parallax>
       </div>
     );

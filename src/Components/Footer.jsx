@@ -48,14 +48,14 @@ export default class Footer extends React.Component {
                   <div className="grey-text text-lighten-3">Sat: call</div>
                 </li>
                 <li>
-                  <div className="grey-text text-lighten-3">Mon: closed</div>
+                  <div className="grey-text text-lighten-3">Sun: closed</div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="footer-copyright">
-          <div className="container">© 2019 Hybrid Cars Inc.</div>
+          <div className="container">© Hybrid Cars Inc.</div>
         </div>
       </footer>
     );

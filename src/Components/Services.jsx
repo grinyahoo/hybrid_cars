@@ -62,7 +62,7 @@ class ServicesItem extends React.Component {
       <div className="col s12 m4 service-card">
         <div className="card">
           <div className="card-image service-card-image">
-            <img src={img} />
+            <img src={img} alt={title}/>
             <span className="card-title w-100 dark-overlay">{title}</span>
           </div>
         </div>

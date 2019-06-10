@@ -1,8 +1,14 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
-import IntegrationDownshift from "./IntegrationDownshift";
+import { Parallax } from "react-parallax";
 
 export default class Estimator extends React.Component {
+
+  handleSubmit = (e) => {
+    // AJAX to backend
+    e.preventDefault();
+    console.log("Submit event from", e.target);
+  }
+
   render() {
     return (
       <div id="estimator" className="get-estimate-block">
@@ -23,16 +29,16 @@ export default class Estimator extends React.Component {
                 margin: "auto"
               }}
             >
-              <form className=" estimator-form text-center col s12 offset-m1 m10 offset-l2 l8">
+              <form className="estimator-form text-center col s12 offset-m1 m10 offset-l2 l8" onSubmit={this.handleSubmit.bind(this)}>
                 <div className="row">
                   <div className="col s10 offset-s1 dark-text text-center">
                     <h2>Get free estimate</h2>
                   </div>
                   <div className="input-field col s12 m6 xl4">
                     <input id="name" type="text" className="validate" />
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <span
-                      class="helper-text"
+                      className="helper-text"
                       data-error="wrong"
                       data-success="right"
                     >
@@ -41,9 +47,9 @@ export default class Estimator extends React.Component {
                   </div>
                   <div className="input-field col s12 m6 xl4">
                     <input id="phone" type="text" className="validate" />
-                    <label for="phone">Phone</label>
+                    <label htmlFor="phone">Phone</label>
                     <span
-                      class="helper-text"
+                      className="helper-text"
                       data-error="wrong"
                       data-success="right"
                     >
@@ -52,9 +58,9 @@ export default class Estimator extends React.Component {
                   </div>
                   <div className="input-field col s12 m6 xl4">
                     <input id="vehicle" type="text" className="validate" />
-                    <label for="vehicle">Vehicle</label>
+                    <label htmlFor="vehicle">Vehicle</label>
                     <span
-                      class="helper-text"
+                      className="helper-text"
                       data-error="wrong"
                       data-success="right"
                     >
@@ -63,9 +69,9 @@ export default class Estimator extends React.Component {
                   </div>
                   <div className="input-field col s12">
                     <textarea id="issue" className="materialize-textarea" />
-                    <label for="issue">Issue</label>
+                    <label htmlFor="issue">Issue</label>
                     <span
-                      class="helper-text"
+                      className="helper-text"
                       data-error="wrong"
                       data-success="right"
                     >
@@ -75,7 +81,8 @@ export default class Estimator extends React.Component {
                   <div className="input-field col s12">
                     <button
                       className="btn btn-large waves-effect waves-light "
-                      name="gEstimate"
+
+                      type="submit"
                     >
                       Get Estimate
                     </button>
