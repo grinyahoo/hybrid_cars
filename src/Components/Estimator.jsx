@@ -32,7 +32,7 @@ export default class Estimator extends React.Component {
               <form className="estimator-form text-center col s12 offset-m1 m10 offset-l2 l8" onSubmit={this.handleSubmit.bind(this)}>
                 <div className="row">
                   <div className="col s10 offset-s1 dark-text text-center">
-                    <h2>Get free estimate</h2>
+                    <h3>Get free estimate</h3>
                   </div>
                   <div className="input-field col s12 m6 xl4">
                     <input id="name" type="text" className="validate" />

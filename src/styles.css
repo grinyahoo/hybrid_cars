@@ -3,6 +3,10 @@
   src: url("/assets/fonts/Hughs.otf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -13,7 +17,7 @@ nav {
   height: auto;
   background-color: rgba(252, 6, 67, 0.7);
   box-shadow: 0;
-  z-index: 2;
+  z-index: 100;
 }
 
 #greeting {
