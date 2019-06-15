@@ -15,7 +15,12 @@
   background-color: rgba($color: #282828, $alpha: 0.5);
 }
 
+// materialize scrollspy fix
+#services, #estimator {
+  padding-top: 56px;
+  margin-top: -56px;
+}
 
-.map-image-footer {
-
+nav ul a.active {
+  color: #26a69a;
 }

@@ -11,7 +11,7 @@ export default class Estimator extends React.Component {
 
   render() {
     return (
-      <div id="estimator" className="get-estimate-block">
+      <section id="estimator" className="get-estimate-block">
         <Parallax
           blur={0}
           bgImage={require("../images/accountant-1238598.jpg")}
@@ -92,7 +92,7 @@ export default class Estimator extends React.Component {
             </div>
           </div>
         </Parallax>
-      </div>
+      </section>
     );
   }
 }

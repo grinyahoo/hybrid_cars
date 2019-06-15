@@ -28,13 +28,13 @@ export default class Header extends React.Component {
               </a>
               <ul id="nav-mobile" className="right hide-on-med-and-down">
                 <li>
-                  <a href="/" name="services" onClick={this.handleAnchor.bind(this)}>Services</a>
+                  <a href="#services" name="services" onClick={this.handleAnchor.bind(this)}>Services</a>
                 </li>
                 <li>
-                  <a href="/" name="estimator" onClick={this.handleAnchor.bind(this)}>Get Estimate</a>
+                  <a href="#estimator" name="estimator" onClick={this.handleAnchor.bind(this)}>Get Estimate</a>
                 </li>
                 <li>
-                  <a href="/" name="location" onClick={this.handleAnchor.bind(this)}>Contacts</a>
+                  <a href="#location" name="location" onClick={this.handleAnchor.bind(this)}>Contacts</a>
                 </li>
               </ul>
               <div className="right hide-on-large-only">

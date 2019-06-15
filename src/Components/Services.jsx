@@ -34,23 +34,23 @@ export default class Services extends React.Component {
         img: "assets/images/battery.jpg"
       },
       {
-        title: "Wheels and Tires",
+        title: "Tires",
         text: "Here will be some text about tire condition, and how you know when you need a new set. Also what sizes we usually keep in stock.",
         badge: "900$+",
         img: "assets/images/tire.jpg"
       }
     ]
   };
-
+  
   render() {
     const cards = this.state.services.map((service, index) => {
       return <ServicesItem key={index} service={service} />;
     });
     return (
-      <div id="services" className="container h-100">
+      <section id="services" className="container h-100">
         <h3>Services</h3>
         <div className="row">{cards}</div>
-      </div>
+      </section>
     );
   }
 }

@@ -13,7 +13,7 @@ export default class Greeting extends React.Component {
 
   render() {
     return (
-      <div id="greeting" className="h-100 parallax-container">
+      <section id="greeting" className="h-100 parallax-container">
         <Parallax
           blur={0}
           bgImage={require("../images/bg0.jpg")}
@@ -55,7 +55,7 @@ export default class Greeting extends React.Component {
             </div>
           </div>
         </Parallax>
-      </div>
+      </section>
     );
   }
 }
